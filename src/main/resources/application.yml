@@ -1,0 +1,16 @@
+server:
+  port: 8015
+spring:
+  application:
+    name: qenwan
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  r2dbc:
+    url: r2dbc:pool:mysql://localhost:3306/regex_db
+    username: root
+    password: 1234
